@@ -1,0 +1,9 @@
+Notes on item Use and Context:
+
+When we run Use on an item we read that item and save the item's context value. We then compare the item's allowed contexts with a context value that we read from somewhere else.
+This somewhere else should be some sort of global configuration file. For example, if the player is in a battle, the global context value will read '2' for battle. If we're in a cave, it could be '4'. 
+Depending on the context that the Use script reads, the Use script will behave differently.
+Eg. If our global config file tells the Use script that the context is '2' for battle (ie. the player is in the middle of a fight), then Use on the Bicycle item will fail, as the Bicycle item record has a context value of 3.
+Items that can be used in any context (those items that have a context value of '1') can be used no matter what the global config file says.
+
+

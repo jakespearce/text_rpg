@@ -1,0 +1,20 @@
+ID	Item Name	Context	Quantity	Submenu	KeyItem
+
+ID: ID is the item's index number, see http://bulbapedia.bulbagarden.net/wiki/List_of_items_by_index_number_(Generation_I)
+
+Submenu: Determines whether using the item will bring up the submenu OUTSIDE OF BATTLE ONLY 1= yes 0 = no eg. Using the Bike item doesn't bring up the submenu when outside of battle. Inside of battle, using the bike item doesn't come up with a submenu it just says 'Now is not the time to use this.'
+
+TODO: Add a column indicating whether the item is a key item. Key items don't display a quantity in the inventory.
+
+KeyItem= 1 = Key item. Key items can't be tossed. When a key item is selected it is instantly used (if it can be used) 
+
+The definition below won't be kept up-to-date all of the time, see the key in the items_database dir.
+Context: A series of numbers denoting what contexts the item can be used in.
+0 = Never (eg. Nugget, Key Items such as Dome and Helix Fossils)
+1 = Any time, Anywhere (eg. Potion) [supersedes any other value]
+2 = In battle (eg. Pokeball) 
+3 = Outside, incl. caves (eg. Bike)
+4 = Caves only (eg. Escape Rope)
+5 = Water edge, or maybe in water (eg. Fishing Rod)
+MORE TO COME
+
