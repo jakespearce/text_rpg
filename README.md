@@ -1,1 +1,27 @@
 # Text RPG
+
+### What is it?
+It's a small top down rpg you can play in a terminal. I used this project to learn Bash and took a **lot** of inspiration from the early Pokemon GameBoy games.
+
+### How do I run it?
+Clone the repository to a directory called text_dungeon in your home directory.
+
+### How do I play it?
+You're represented by the little C character on the map.
+The WASD keys move you North, West, South and East respectively.
+Press E to interact with objects on the map. Try reading a sign. Here we're reading the sign to our own house:
+![Reading a sign](https://s33.postimg.org/xdzs6b473/reading_sign.png)
+I've highlighted where the C character representing us is on the map with a red arrow. If you're curious about what anything on the map means try walking up to it and pressing E! If you don't get any feedback it's probably just 
+
+Walking into a house simply requires you to move through the door of the house (if it's open of course)
+Walking up to the door...
+![Walking up to the door screenshot](https://s33.postimg.org/b0s1jqnwf/approaching_door.png)
+...And entering the house.
+![Inside the house screenshot](https://s33.postimg.org/pwqkra1v3/inside_house.png)
+Now we're inside.
+You can press the M key to open the menu.
+Press D to select a menu item and A to go back. Pressing A will also exit the menu if you're at the top level.
+
+### To Do
+Add more levels and puzzles to flesh out the gameplay.
+
