@@ -1,6 +1,0 @@
-ToDo next time you're here:
-Make all of the scripts prettier :)
-Write a how-to for the github page.
-Try installing it to a fresh computer and see what happens as we follow the instructions we wrote.
-
-

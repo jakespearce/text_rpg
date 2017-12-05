@@ -10,14 +10,14 @@ Clone the repository to a directory called text_dungeon in your home directory.
 You're represented by the little C character on the map.
 The WASD keys move you North, West, South and East respectively.
 Press E to interact with objects on the map. Try reading a sign. Here we're reading the sign to our own house:
-![Reading a sign](https://s33.postimg.org/xdzs6b473/reading_sign.png)
+[reading_sign.png](https://postimg.org/image/7ig1n42d7/)
 I've highlighted where the C character representing us is on the map with a red arrow. If you're curious about what anything on the map means try walking up to it and pressing E! If you don't get any feedback it's probably just 
 
 Walking into a house simply requires you to move through the door of the house (if it's open of course)
 Walking up to the door...
-![Walking up to the door screenshot](https://s33.postimg.org/b0s1jqnwf/approaching_door.png)
+[approaching_door.png](https://postimg.org/image/u5vati2kb/)
 ...And entering the house.
-![Inside the house screenshot](https://s33.postimg.org/pwqkra1v3/inside_house.png)
+[inside_house.png](https://postimg.org/image/ky32cqy23/)
 Now we're inside.
 You can press the M key to open the menu.
 Press D to select a menu item and A to go back. Pressing A will also exit the menu if you're at the top level.
