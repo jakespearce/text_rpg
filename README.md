@@ -5,6 +5,7 @@ It's a small top down rpg you can play in a terminal. I used this project to lea
 
 ### How do I run it?
 Clone the repository to a directory called text_dungeon in your home directory.
+From your home directory start playing the game: `$ sh text_dungeon/text_dungeon.sh`
 
 ### How do I play it?
 You're represented by the little C character on the map.
