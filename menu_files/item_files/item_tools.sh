@@ -1,11 +1,11 @@
 #!/bin/bash
 
-inventory_items_path="${HOME}/text_dungeon/menu_files/item_files/inventory_items.tab"
-item_submenu_file="${HOME}/text_dungeon/menu_files/item_files/item_submenu"
+inventory_items_path="menu_files/item_files/inventory_items.tab"
+item_submenu_file="menu_files/item_files/item_submenu"
 hiOn=$( tput smso )
 hiOff=$( tput rmso )
-where_selection_is_file_item_menu="${HOME}/text_dungeon/menu_files/item_files/where_selection_is_items"
-where_selection_is_file_item_submenu="${HOME}/text_dungeon/menu_files/item_files/where_selection_is_item_submenu"
+where_selection_is_file_item_menu="menu_files/item_files/where_selection_is_items"
+where_selection_is_file_item_submenu="menu_files/item_files/where_selection_is_item_submenu"
 
 
 get_where_selection_is_item_menu(){

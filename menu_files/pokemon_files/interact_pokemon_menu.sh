@@ -1,13 +1,13 @@
 #!/bin/bash
 
 where_selection_is=2
-generate_pokemon_menu_script="${HOME}/text_dungeon/menu_files/pokemon_files/generate_menu_gui.sh"
-moves_file="${HOME}/text_dungeon/pokemon_database/common/moves/moves.tab"
-pokemon_submenu="${HOME}/text_dungeon/menu_files/pokemon_files/pokemon_submenu.sh"
-menu_tools="${HOME}/text_dungeon/menu_files/menu_tools.sh"
+generate_pokemon_menu_script="menu_files/pokemon_files/generate_menu_gui.sh"
+moves_file="pokemon_database/common/moves/moves.tab"
+pokemon_submenu="menu_files/pokemon_files/pokemon_submenu.sh"
+menu_tools="menu_files/menu_tools.sh"
 source "$menu_tools"
 selection_adjuster=4
-where_selection_is_pokemon_menu="${HOME}/text_dungeon/menu_files/pokemon_files/where_selection_is_pokemon_menu"
+where_selection_is_pokemon_menu="menu_files/pokemon_files/where_selection_is_pokemon_menu"
 bash "$generate_pokemon_menu_script"
 pokemon_menu_file="/dev/shm/pokemon_menu"
 menu_height=$( wc -l < "$pokemon_menu_file" )

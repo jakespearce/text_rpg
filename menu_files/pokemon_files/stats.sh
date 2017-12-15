@@ -1,10 +1,10 @@
 #!/bin/bash
 
-source "${HOME}/text_dungeon/generic_tools/tools.sh" # calculate_whitespace is sourced from here
-pokemon_art_path="${HOME}/text_dungeon/pokemon_database/art"
-moves_tab_file="${HOME}/text_dungeon/pokemon_database/common/moves/moves.tab"
-where_selection_is_pokemon_menu_file="${HOME}/text_dungeon/menu_files/pokemon_files/where_selection_is_pokemon_menu"
-owned_pokemon="${HOME}/text_dungeon/character_files/owned_pokemon"
+source "generic_tools/tools.sh" # calculate_whitespace is sourced from here
+pokemon_art_path="pokemon_database/art"
+moves_tab_file="pokemon_database/common/moves/moves.tab"
+where_selection_is_pokemon_menu_file="menu_files/pokemon_files/where_selection_is_pokemon_menu"
+owned_pokemon="character_files/owned_pokemon"
 while read value; do
 	pokemon_menu_hidden_values_line="$(( $value + 2 ))"
 done < "$where_selection_is_pokemon_menu_file"

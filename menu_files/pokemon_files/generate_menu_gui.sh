@@ -5,8 +5,8 @@
 #0 HP:#############-------  13 / 20
 # there's also another non-gui component of the output file that gets created immediately below what you see above. This line contains the pokemonUniqueID and the pokemon's moves (so far.)
 
-pokemon_in_inventory="${HOME}/text_dungeon/character_files/pokemon_in_inventory.csv"
-owned_pokemon="${HOME}/text_dungeon/character_files/owned_pokemon"
+pokemon_in_inventory="character_files/pokemon_in_inventory.csv"
+owned_pokemon="character_files/owned_pokemon"
 pokemon_menu_file="/dev/shm/pokemon_menu"
 
 generate_pokemon_menu(){

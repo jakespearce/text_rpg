@@ -1,11 +1,12 @@
 #!/bin/bash
 
-source "${HOME}/text_dungeon/generic_tools/tools.sh"
-pokedex_files="${HOME}/text_dungeon/menu_files/pokedex_files"
+source "generic_tools/tools.sh"
+pokedex_files="menu_files/pokedex_files"
 where_selection_is=1
-menu_tools="${HOME}/text_dungeon/menu_files/menu_tools.sh"
+menu_tools="menu_files/menu_tools.sh"
 source "$menu_tools"
 selection_adjuster=1
+
 
 # for a more indepth explanation on what these variables do, read the comments above the reposition_window() function.
 # tl;dr the value of lines_after_selection determines how many menu items a player sees at any given time. we only show a small window of menu items at any given time because showing all 151 pokedex menu lines at once would be luudicrous.

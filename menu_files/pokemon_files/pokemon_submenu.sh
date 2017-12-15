@@ -6,13 +6,13 @@ hiOn=$( tput smso )
 hiOff=$( tput rmso )
 menu_height=$( wc -l < "$pokemon_submenu_file" )
 where_selection_is=1
-switch="${HOME}/text_dungeon/menu_files/pokemon_files/switch.sh"
-stats="${HOME}/text_dungeon/menu_files/pokemon_files/stats.sh"
-menu_tools="${HOME}/text_dungeon/menu_files/menu_tools.sh"
+switch="menu_files/pokemon_files/switch.sh"
+stats="menu_files/pokemon_files/stats.sh"
+menu_tools="menu_files/menu_tools.sh"
 source "$menu_tools"
 # used for keeping the menu selection in range
 selection_adjuster=1
-where_selection_is_pokemon_menu="${HOME}/text_dungeon/menu_files/pokemon_files/where_selection_is_pokemon_menu"
+where_selection_is_pokemon_menu="menu_files/pokemon_files/where_selection_is_pokemon_menu"
 
 
 while read line; do
@@ -73,8 +73,8 @@ select_menu_item(){
 				echo "temp dev - $HM_id"
 				sleep 2
 			else
-				[[ "$line_item" = "STATS" ]] &&  bash "${HOME}/text_dungeon/menu_files/pokemon_files/stats.sh"
-				[[ "$line_item" = "SWITCH" ]] && bash "${HOME}/text_dungeon/menu_files/pokemon_files/switch.sh" ; rm "$pokemon_submenu_file"
+				[[ "$line_item" = "STATS" ]] &&  bash "menu_files/pokemon_files/stats.sh"
+				[[ "$line_item" = "SWITCH" ]] && bash "menu_files/pokemon_files/switch.sh" ; rm "$pokemon_submenu_file"
 				[[ "$line_item" = "CANCEL" ]] &&  rm "$pokemon_submenu_file" ; exit 
 			fi
 		fi

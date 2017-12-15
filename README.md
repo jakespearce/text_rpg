@@ -4,8 +4,8 @@
 It's a small top down rpg you can play in a terminal. I used this project to learn Bash and took a **lot** of inspiration from the early Pokemon GameBoy games.
 
 ### How do I run it?
-Clone the repository to a directory called text_dungeon in your home directory.
-From your home directory start playing the game: `$ sh text_dungeon/text_dungeon.sh`
+Clone the repository.
+Run the `text_dungeon.sh` script.
 
 ### How do I play it?
 You're represented by the little C character on the map.

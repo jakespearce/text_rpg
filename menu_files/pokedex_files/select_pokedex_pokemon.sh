@@ -1,7 +1,7 @@
 #!/bin/bash
 
-art_files="${HOME}/text_dungeon/pokemon_database/art"
-data_files="${HOME}/text_dungeon/menu_files/pokedex_files/pokedex_db/data"
+art_files="pokemon_database/art"
+data_files="menu_files/pokedex_files/pokedex_db/data"
 pokemonID=$1
 seen=$2
 own=$3

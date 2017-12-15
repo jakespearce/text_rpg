@@ -4,11 +4,11 @@
 # at this point we simply swap the ordering of the values in /text_dungeon/character_files/pokemon_in_inventory.csv
 # we then re-generate the gui component of the pokemon menu now that our pokemon are in the desired order.
 
-pokemon_in_inventory="${HOME}/text_dungeon/character_files/pokemon_in_inventory.csv"
-pokemon_menu_directory="${HOME}/text_dungeon/menu_files/pokemon_files"
+pokemon_in_inventory="character_files/pokemon_in_inventory.csv"
+pokemon_menu_directory="menu_files/pokemon_files"
 pokemon_menu_file="/dev/shm/pokemon_menu"
 menu_height=$( wc -l < "$pokemon_menu_file" )
-where_selection_is_pokemon_menu="${HOME}/text_dungeon/menu_files/pokemon_files/where_selection_is_pokemon_menu"
+where_selection_is_pokemon_menu="menu_files/pokemon_files/where_selection_is_pokemon_menu"
 
 
 # we'll use this postion value for the pokemon we selected to switch
@@ -19,7 +19,7 @@ done < "$where_selection_is_pokemon_menu"
 where_selection_is=$pokemon_menu_position
 
 
-menu_tools="${HOME}/text_dungeon/menu_files/menu_tools.sh"
+menu_tools="menu_files/menu_tools.sh"
 source "$menu_tools"
 selection_adjuster=4
 

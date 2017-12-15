@@ -88,7 +88,7 @@ change_map_element(){
 
 get_new_map_info_set_start_pos(){
 
-	source "${text_dungeon}/character_files/character.cfg"
+	source "character_files/character.cfg"
 	get_map_info
 	x=$1
 	y=$2

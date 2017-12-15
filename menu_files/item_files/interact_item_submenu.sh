@@ -1,13 +1,13 @@
 #!/bin/bash
 
-item_tools="${HOME}/text_dungeon/menu_files/item_files/item_tools.sh"
+item_tools="menu_files/item_files/item_tools.sh"
 source "$item_tools"
-menu_tools="${HOME}/text_dungeon/menu_files/menu_tools.sh"
+menu_tools="menu_files/menu_tools.sh"
 source "$menu_tools"
-item_submenu_file="${HOME}/text_dungeon/menu_files/item_files/item_submenu"
-where_selection_is_item_submenu_file="${HOME}/text_dungeon/menu_files/item_files/where_selection_is_item_submenu"
-toss_script="${HOME}/text_dungeon/menu_files/item_files/toss.sh"
-use_script="${HOME}/text_dungeon/menu_files/item_files/use.sh"
+item_submenu_file="menu_files/item_files/item_submenu"
+where_selection_is_item_submenu_file="menu_files/item_files/where_selection_is_item_submenu"
+toss_script="menu_files/item_files/toss.sh"
+use_script="menu_files/item_files/use.sh"
 menu_height=$( wc -l < "$item_submenu_file"  )
 selection_adjuster=1 # used for keeping selection in range
 where_selection_is=1 # used exclusively for deciding where we are on the item submenu

@@ -2,12 +2,12 @@
 # Here we deal with the "tossing" of items ie. throwing an item away
 
 
-item_tools="${HOME}/text_dungeon/menu_files/item_files/item_tools.sh"
+item_tools="menu_files/item_files/item_tools.sh"
 source "$item_tools"
-menu_tools="${HOME}/text_dungeon/menu_files/menu_tools.sh"
+menu_tools="menu_files/menu_tools.sh"
 source "$menu_tools"
-item_inventory_file_path="${HOME}/text_dungeon/menu_files/item_files/inventory_items.tab"
-temp_item_inventory_file_path="${HOME}/text_dungeon/menu_files/item_files/temp_inventory_items.tab"
+item_inventory_file_path="menu_files/item_files/inventory_items.tab"
+temp_item_inventory_file_path="menu_files/item_files/temp_inventory_items.tab"
 lines_before_selection=$1 #TODO so far lines_before_selection and lines_after_selection are created and changed via item_menu. They are passed on to item_submenu. They are then passed here. They are passed as script arguments. This is very unsexy and upsetting, it should be fixed.
 lines_after_selection=$2
 menu_height=1 #TODO this is just a placeholder so that reposition_item_menu_window in item_tools.sh doesn't break. It doesn't matter what value it is, as long as it's an integer. This is saddening and needs fixing.

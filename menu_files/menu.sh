@@ -1,13 +1,13 @@
 #!/bin/bash
 
-source ${HOME}/text_dungeon/menu_files/menus.cfg
-source ${HOME}/text_dungeon/generic_tools/tools.sh
-menu_tools="${HOME}/text_dungeon/menu_files/menu_tools.sh"
+source menu_files/menus.cfg
+source generic_tools/tools.sh
+menu_tools="menu_files/menu_tools.sh"
 selection_adjuster=1
 source "$menu_tools"
 
 # menu files filepath
-menu_files="${HOME}/text_dungeon/menu_files"
+menu_files="menu_files"
 
 # always start with where_selection_is at 1, so we're at the top of any menu we land on
 where_selection_is=1
