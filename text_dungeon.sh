@@ -6,7 +6,6 @@
 working_directory=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 cd "$working_directory"
 
-text_dungeon="${HOME}/text_dungeon"
 character_config="character_files/character.cfg"
 
 source "character_files/character.cfg"
