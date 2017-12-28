@@ -6,6 +6,7 @@ where_selection_is=1
 menu_tools="menu_files/menu_tools.sh"
 source "$menu_tools"
 selection_adjuster=1
+marked_pokedex="/tmp/marked_pokedex"
 
 
 # for a more indepth explanation on what these variables do, read the comments above the reposition_window() function.
@@ -25,7 +26,7 @@ refresh_pokedex(){
 
 		((count++))
 
-	# the statements below 'modify' how the pokemon will be displayed to the player. Remember the only thing the player actually sees is the /dev/shm/marked_pokedex file.
+	# the statements below 'modify' how the pokemon will be displayed to the player. Remember the only thing the player actually sees is the /tmp/marked_pokedex file.
 
 		# for when that item is 'selected'
 		if [ "$count" -eq "$where_selection_is" ]; then
@@ -58,7 +59,7 @@ refresh_pokedex(){
 			fi
 		fi
 	
-	done < "${pokedex_files}/pokedex" > /dev/shm/marked_pokedex
+	done < "${pokedex_files}/pokedex" > "$marked_pokedex"
 				
 }
 
@@ -83,7 +84,7 @@ show_pokedex(){
 
 			fi
 
-		done < /dev/shm/marked_pokedex
+		done < "$marked_pokedex"
 
 }
 

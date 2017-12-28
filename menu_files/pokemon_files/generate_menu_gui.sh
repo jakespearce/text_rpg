@@ -7,7 +7,7 @@
 
 pokemon_in_inventory="character_files/pokemon_in_inventory.csv"
 owned_pokemon="character_files/owned_pokemon"
-pokemon_menu_file="/dev/shm/pokemon_menu"
+pokemon_menu_file="/tmp/pokemon_menu"
 
 generate_pokemon_menu(){
 

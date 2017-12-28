@@ -1,6 +1,6 @@
 #!/bin/bash
 
-map_rw_path="/dev/shm"
+map_rw_path="/tmp"
 
 get_map_info(){
 

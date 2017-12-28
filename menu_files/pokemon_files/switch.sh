@@ -6,7 +6,7 @@
 
 pokemon_in_inventory="character_files/pokemon_in_inventory.csv"
 pokemon_menu_directory="menu_files/pokemon_files"
-pokemon_menu_file="/dev/shm/pokemon_menu"
+pokemon_menu_file="/tmp/pokemon_menu"
 menu_height=$( wc -l < "$pokemon_menu_file" )
 where_selection_is_pokemon_menu="menu_files/pokemon_files/where_selection_is_pokemon_menu"
 

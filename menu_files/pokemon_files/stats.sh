@@ -8,12 +8,12 @@ owned_pokemon="character_files/owned_pokemon"
 while read value; do
 	pokemon_menu_hidden_values_line="$(( $value + 2 ))"
 done < "$where_selection_is_pokemon_menu_file"
-pokemon_menu_file="/dev/shm/pokemon_menu"
-blockOne="/dev/shm/blockOne"
-blockTwo="/dev/shm/blockTwo"
-blockThree="/dev/shm/blockThree"
-blockFour="/dev/shm/blockFour"
-blockFive="/dev/shm/blockFive"
+pokemon_menu_file="/tmp/pokemon_menu"
+blockOne="/tmp/blockOne"
+blockTwo="/tmp/blockTwo"
+blockThree="/tmp/blockThree"
+blockFour="/tmp/blockFour"
+blockFive="/tmp/blockFive"
 whitespace_character=" "
 
 # clean up

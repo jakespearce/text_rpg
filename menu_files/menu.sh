@@ -5,19 +5,18 @@ source generic_tools/tools.sh
 menu_tools="menu_files/menu_tools.sh"
 selection_adjuster=1
 source "$menu_tools"
-
 # menu files filepath
 menu_files="menu_files"
-
+marked_menu="/tmp/marked_menu"
 # always start with where_selection_is at 1, so we're at the top of any menu we land on
 where_selection_is=1
-
 # $current_menu will be a path to a menu file, determined by menus.cfg
 # this is purely the gui component of the main menu.
 current_menu=${menu[$menu_in_view]}
-
 menu_height=$( wc -l < $current_menu )
-cat $current_menu > /dev/shm/marked_menu
+
+
+cat $current_menu > "$marked_menu"
 
 
 # the menu item that is currently selected has 'selected' appended to the menu in marked_menu. when we read this line we turn highlighting on so it appears highlighted.
@@ -31,7 +30,7 @@ show_menu(){
     	else
       		echo "$menu_item"
     	fi
-  	done < /dev/shm/marked_menu
+  	done < "$marked_menu"
 }
 
 
@@ -49,7 +48,7 @@ refresh_menu(){
       		echo $menu_line
     	fi
 
-  	done < $current_menu > /dev/shm/marked_menu
+  	done < $current_menu > "$marked_menu"
 }
 
 

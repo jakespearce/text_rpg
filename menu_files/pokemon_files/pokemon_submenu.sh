@@ -1,7 +1,7 @@
 #!/bin/bash
 
-pokemon_menu_file="/dev/shm/pokemon_menu"
-pokemon_submenu_file="/dev/shm/submenu_pokemon_menu"
+pokemon_menu_file="/tmp/pokemon_menu"
+pokemon_submenu_file="/tmp/submenu_pokemon_menu"
 hiOn=$( tput smso )
 hiOff=$( tput rmso )
 menu_height=$( wc -l < "$pokemon_submenu_file" )
