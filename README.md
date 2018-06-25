@@ -8,7 +8,7 @@ Clone the repository.
 Run the `text_dungeon.sh` script.
 
 ### How do I play it?
-You're represented by the little C character on the map.
+You're represented by the C character on the map.
 The WASD keys move you North, West, South and East respectively.
 Press E to interact with objects on the map. Try reading a sign. Here we're reading the sign to our own house. A text box appears under the map with the text My House!
 
